@@ -1,0 +1,22 @@
+\begin{table}[H]
+\centering
+\caption{Seed/split replication diagnostics. These rows use smaller resampled diagnostic splits, so base edit and harmful-refusal rates vary with the sampled split and are not intended to reproduce the full 500/500/98 estimates in Table~\ref{tab:primary-operating}. Rows include paired no-veto controls where available and thresholded-veto split checks. Veto rates are edit/benign/harmful percentages.}
+\label{tab:seed-replication}
+\small
+\setlength{\tabcolsep}{3pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrrrrl}
+\toprule
+Method & Base edit ref. & Edit ref. & Benign pres. & Harmful pres. & Base harm ref. & Harm ref. & Harm $\Delta$ & Veto rate \\
+\midrule
+Seed 43/29, no veto & 86.8 & 7.9 & 89.1 & 79.9 & 36.8 & 31.6 & -5.3 & -- \\
+Seed 43/29, soft veto & 86.8 & 13.2 & 89.1 & 89.6 & 36.8 & 34.2 & -2.6 & 7.9/0.0/86.8 \\
+Seed 43/29, thresholded veto & 86.8 & 15.8 & 89.3 & 89.6 & 36.8 & 34.2 & -2.6 & 7.9/0.0/86.8 \\
+Seed 44/31, no veto & 94.7 & 5.3 & 90.8 & 73.4 & 36.8 & 26.3 & -10.5 & -- \\
+Seed 44/31, thresholded veto & 94.7 & 5.3 & 92.2 & 94.3 & 36.8 & 36.8 & +0.0 & 2.6/0.0/92.1 \\
+Seed 45/33, no veto & 100.0 & 10.5 & 98.4 & 82.8 & 42.1 & 39.5 & -2.6 & -- \\
+Seed 45/33, thresholded veto & 100.0 & 10.5 & 100.0 & 93.7 & 42.1 & 42.1 & +0.0 & 2.6/0.0/92.1 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}

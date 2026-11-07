@@ -1,0 +1,18 @@
+\begin{table}[H]
+\centering
+\caption{Binomial uncertainty for the primary held-out refusal-rate estimates. Bracketed values are Wilson 95\% intervals in percentage points; preservation metrics are KL-derived and are not binomial rates.}
+\label{tab:refusal-uncertainty}
+\small
+\setlength{\tabcolsep}{4pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrr}
+\toprule
+Method & Edit refusal [95\% CI] & Base harmful refusal [95\% CI] & Harmful refusal [95\% CI] & Harm $\Delta$ \\
+\midrule
+Base model & 88.6 [85.5, 91.1] & 81.6 [72.8, 88.1] & 81.6 [72.8, 88.1] & 0.0 \\
+\method{} thresholded-soft S4/T2 & 4.0 [2.6, 6.1] & 81.6 [72.8, 88.1] & 65.3 [55.4, 74.0] & -16.3 \\
+\method{} oracle S4/T2 & 0.2 [0.0, 1.1] & 81.6 [72.8, 88.1] & 81.6 [72.8, 88.1] & 0.0 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}

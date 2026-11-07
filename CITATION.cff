@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the Residual Paving paper."
+title: "Residual Paving: Diagnosing the Routing Bottleneck in Selective Refusal Editing"
+authors:
+  - family-names: Hinkley
+    given-names: Bryce
+  - family-names: Najafirad
+    given-names: Peyman
+version: 1.0-neurips2026
+license: MIT
+repository-code: "https://github.com/Ouroborosrex/Residual-Paving-NeurIPS"
+url: "https://arxiv.org/abs/2605.20262"

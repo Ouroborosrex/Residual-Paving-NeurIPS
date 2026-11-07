@@ -1,0 +1,181 @@
+\scriptsize
+\setlength{\LTcapwidth}{\linewidth}
+\setlength{\tabcolsep}{4pt}
+\begin{longtable}{@{}lrrrrrr@{}}
+\caption{Full three-objective comparator summary across evaluated backbones and Phi/Qwen judges. Rows are grouped by backbone and judge. Edit ASR and harmful-keep ASR are compliance-style percentages; lower harmful-keep ASR is better. Benign columns report label agreement or similarity to the no-intervention benign completion. Missing transferred values are shown as --.}\label{tab:transferred-three-objective-full}\\
+\toprule
+Method & Edit ASR $\uparrow$ & Label $\uparrow$ & BERT $\uparrow$ & R-L $\uparrow$ & chrF $\uparrow$ & Harm $\downarrow$ \\
+\midrule
+\endfirsthead
+\caption[]{Full three-objective comparator summary across evaluated backbones and Phi/Qwen judges. Rows are grouped by backbone and judge. Edit ASR and harmful-keep ASR are compliance-style percentages; lower harmful-keep ASR is better. Benign columns report label agreement or similarity to the no-intervention benign completion. Missing transferred values are shown as --. (continued)}\\
+\toprule
+Method & Edit ASR $\uparrow$ & Label $\uparrow$ & BERT $\uparrow$ & R-L $\uparrow$ & chrF $\uparrow$ & Harm $\downarrow$ \\
+\midrule
+\endhead
+\midrule
+\multicolumn{7}{r}{Continued on next page} \\
+\endfoot
+\bottomrule
+\endlastfoot
+\multicolumn{7}{@{}l}{\textbf{Gemma-3-4B-IT --- Phi-4 mini}} \\
+No intervention & 3.8 & 100.0 & 100.0 & 100.0 & 100.0 & 8.2 \\
+GoR/DIM ablation & 5.2 & 98.6 & 92.1 & 50.9 & 60.8 & 7.1 \\
+GoR/DIM act-sub & 6.2 & 99.6 & 92.7 & 54.6 & 63.9 & 9.2 \\
+GoR-RDO ablation & 2.8 & 98.6 & 93.1 & 57.2 & 66.3 & 8.2 \\
+Refusal direction ablation & 5.2 & 98.6 & 92.1 & 50.9 & 60.8 & 7.1 \\
+Refusal direction ActAdd & 5.8 & 99.6 & 92.7 & 54.6 & 63.9 & 9.2 \\
+RepIt projection & 2.8 & 97.0 & 87.7 & 31.1 & 43.5 & 6.1 \\
+\addlinespace[2pt]
+\multicolumn{7}{@{}l}{\textbf{Gemma-3-4B-IT --- Qwen2.5-7B}} \\
+No intervention & 1.2 & 100.0 & 100.0 & 100.0 & 100.0 & 2.0 \\
+GoR/DIM ablation & 2.4 & 98.6 & 92.1 & 50.9 & 60.8 & 1.0 \\
+GoR/DIM act-sub & 2.2 & 99.6 & 92.7 & 54.6 & 63.9 & 4.1 \\
+GoR-RDO ablation & 1.2 & 98.6 & 93.1 & 57.2 & 66.3 & 1.0 \\
+Refusal direction ablation & 2.4 & 98.6 & 92.1 & 50.9 & 60.8 & 1.0 \\
+Refusal direction ActAdd & 2.2 & 99.6 & 92.7 & 54.6 & 63.9 & 4.1 \\
+RepIt projection & 1.6 & 97.0 & 87.7 & 31.1 & 43.5 & 0.0 \\
+\addlinespace[2pt]
+\multicolumn{7}{@{}l}{\textbf{Gemma-2-2B-IT --- Phi-4 mini}} \\
+No intervention & 1.2 & 100.0 & 100.0 & 100.0 & 100.0 & 0.0 \\
+GoR/DIM ablation & 75.2 & 97.0 & 86.9 & 24.2 & 31.4 & 70.4 \\
+GoR/DIM act-sub & 61.4 & 98.0 & 90.2 & 38.1 & 49.7 & 66.3 \\
+GoR-RDO ablation & 62.0 & 98.8 & 95.0 & 65.6 & 74.2 & 66.3 \\
+Refusal direction ablation & 75.0 & 97.0 & 86.9 & 24.2 & 31.4 & 67.3 \\
+Refusal direction ActAdd & 60.6 & 98.0 & 90.2 & 38.1 & 49.7 & 66.3 \\
+RepIt projection & 14.4 & 97.8 & 89.9 & 34.9 & 49.2 & 31.6 \\
+\addlinespace[2pt]
+\multicolumn{7}{@{}l}{\textbf{Gemma-2-2B-IT --- Qwen2.5-7B}} \\
+No intervention & 0.2 & 100.0 & 100.0 & 100.0 & 100.0 & 0.0 \\
+GoR/DIM ablation & 57.4 & 97.0 & 86.9 & 24.2 & 31.4 & 29.6 \\
+GoR/DIM act-sub & 55.6 & 98.0 & 90.2 & 38.1 & 49.7 & 45.9 \\
+GoR-RDO ablation & 54.8 & 98.8 & 95.0 & 65.6 & 74.2 & 41.8 \\
+Refusal direction ablation & 57.6 & 97.0 & 86.9 & 24.2 & 31.4 & 28.6 \\
+Refusal direction ActAdd & 55.8 & 98.0 & 90.2 & 38.1 & 49.7 & 45.9 \\
+RepIt projection & 7.2 & 97.8 & 89.9 & 34.9 & 49.2 & 11.2 \\
+\addlinespace[2pt]
+\multicolumn{7}{@{}l}{\textbf{Llama-3-8B-Instruct --- Phi-4 mini}} \\
+No intervention & 0.0 & 100.0 & 100.0 & 100.0 & 100.0 & 4.1 \\
+GoR/DIM ablation & 33.8 & 99.4 & 93.5 & 58.2 & 68.2 & 29.6 \\
+GoR/DIM act-sub & 68.2 & 99.4 & 90.1 & 39.1 & 47.3 & 81.6 \\
+GoR-RDO ablation & 32.2 & 99.8 & 96.6 & 77.8 & 82.5 & 42.9 \\
+Refusal direction ablation & 34.8 & 99.6 & 92.6 & 53.2 & 63.8 & 33.7 \\
+Refusal direction ActAdd & 55.2 & 99.6 & 90.2 & 40.2 & 48.7 & 73.5 \\
+RepIt projection & 2.4 & 99.4 & 90.7 & 41.0 & 54.6 & 7.1 \\
+\addlinespace[2pt]
+\multicolumn{7}{@{}l}{\textbf{Llama-3-8B-Instruct --- Qwen2.5-7B}} \\
+No intervention & 0.0 & 100.0 & 100.0 & 100.0 & 100.0 & 1.0 \\
+GoR/DIM ablation & 21.0 & 99.4 & 93.5 & 58.2 & 68.2 & 13.3 \\
+GoR/DIM act-sub & 55.0 & 99.4 & 90.1 & 39.1 & 47.3 & 66.3 \\
+GoR-RDO ablation & 20.0 & 99.8 & 96.6 & 77.8 & 82.5 & 21.4 \\
+Refusal direction ablation & 23.2 & 99.6 & 92.6 & 53.2 & 63.8 & 21.4 \\
+Refusal direction ActAdd & 42.0 & 99.6 & 90.2 & 40.2 & 48.7 & 52.0 \\
+RepIt projection & 1.2 & 99.4 & 90.7 & 41.0 & 54.6 & 3.1 \\
+\addlinespace[2pt]
+\multicolumn{7}{@{}l}{\textbf{Qwen2.5-14B-Instruct --- Phi-4 mini}} \\
+No intervention & 4.4 & 100.0 & 100.0 & 100.0 & 100.0 & 2.0 \\
+GoR/DIM ablation & 58.4 & 99.2 & 87.7 & 25.6 & 42.9 & 78.6 \\
+GoR/DIM act-sub & 18.6 & 99.4 & 91.6 & 43.4 & 55.9 & 31.6 \\
+GoR-RDO ablation & 65.2 & 99.4 & 92.3 & 47.0 & 59.8 & 75.5 \\
+Refusal direction ablation & 59.2 & 99.2 & 88.9 & 29.7 & 40.4 & 84.7 \\
+Refusal direction ActAdd & 54.6 & 99.4 & 90.8 & 38.3 & 52.6 & 74.5 \\
+RepIt projection & 16.4 & 99.0 & 90.6 & 37.9 & 51.2 & 20.4 \\
+\addlinespace[2pt]
+\multicolumn{7}{@{}l}{\textbf{Qwen2.5-14B-Instruct --- Qwen2.5-7B}} \\
+No intervention & 1.4 & 100.0 & 100.0 & 100.0 & 100.0 & 0.0 \\
+GoR/DIM ablation & 59.4 & 99.2 & 87.7 & 25.6 & 42.9 & 39.8 \\
+GoR/DIM act-sub & 5.6 & 99.4 & 91.6 & 43.4 & 55.9 & 4.1 \\
+GoR-RDO ablation & 49.6 & 99.4 & 92.3 & 47.0 & 59.8 & 34.7 \\
+Refusal direction ablation & 42.2 & 99.2 & 88.9 & 29.7 & 40.4 & 44.9 \\
+Refusal direction ActAdd & 46.4 & 99.4 & 90.8 & 38.3 & 52.6 & 42.9 \\
+RepIt projection & 7.2 & 99.0 & 90.6 & 37.9 & 51.2 & 7.1 \\
+\addlinespace[2pt]
+\multicolumn{7}{@{}l}{\textbf{Phi-4-mini-Instruct --- Phi-4 mini}} \\
+No intervention & 1.2 & 100.0 & 100.0 & 100.0 & 100.0 & 1.0 \\
+GoR/DIM ablation & 0.0 & 0.0 & 70.2 & 0.0 & 0.0 & 0.0 \\
+GoR/DIM act-sub & 18.6 & 18.8 & 68.6 & 0.0 & 3.9 & 25.5 \\
+GoR-RDO ablation & 5.8 & 99.0 & 91.2 & 43.3 & 57.9 & 9.2 \\
+Refusal direction ablation & 0.0 & 0.0 & 70.2 & 0.0 & 0.0 & 0.0 \\
+Refusal direction ActAdd & 6.6 & 20.0 & 68.8 & 0.0 & 4.3 & 19.4 \\
+RepIt projection & 1.4 & 99.0 & 91.1 & 41.0 & 52.7 & 5.1 \\
+\addlinespace[2pt]
+\multicolumn{7}{@{}l}{\textbf{Phi-4-mini-Instruct --- Qwen2.5-7B}} \\
+No intervention & 0.4 & 100.0 & 100.0 & 100.0 & 100.0 & 0.0 \\
+GoR/DIM ablation & 0.0 & 0.0 & 70.2 & 0.0 & 0.0 & 0.0 \\
+GoR/DIM act-sub & 15.6 & 18.8 & 68.6 & 0.0 & 3.9 & 16.3 \\
+GoR-RDO ablation & 4.2 & 99.0 & 91.2 & 43.3 & 57.9 & 4.1 \\
+Refusal direction ablation & 0.0 & 0.0 & 70.2 & 0.0 & 0.0 & 0.0 \\
+Refusal direction ActAdd & 4.4 & 20.0 & 68.8 & 0.0 & 4.3 & 16.3 \\
+RepIt projection & 0.2 & 99.0 & 91.1 & 41.0 & 52.7 & 0.0 \\
+\addlinespace[2pt]
+\multicolumn{7}{@{}l}{\textbf{Qwen3-4B-Instruct-2507 --- Phi-4 mini}} \\
+No intervention & 2.6 & 100.0 & 100.0 & 100.0 & 100.0 & 1.0 \\
+GoR/DIM ablation & 66.0 & 97.2 & 90.0 & 37.2 & 48.9 & 79.6 \\
+GoR/DIM act-sub & 9.2 & 96.6 & 91.1 & 42.7 & 53.0 & 29.6 \\
+GoR-RDO ablation & 42.6 & 98.6 & 95.0 & 67.3 & 73.9 & 29.6 \\
+Refusal direction ablation & 66.8 & 97.2 & 90.0 & 37.2 & 48.9 & 80.6 \\
+Refusal direction ActAdd & 9.2 & 96.6 & 91.1 & 42.7 & 53.0 & 29.6 \\
+RepIt projection & 3.6 & 98.2 & 93.4 & 55.6 & 65.4 & 1.0 \\
+\addlinespace[2pt]
+\multicolumn{7}{@{}l}{\textbf{Qwen3-4B-Instruct-2507 --- Qwen2.5-7B}} \\
+No intervention & 1.4 & 100.0 & 100.0 & 100.0 & 100.0 & 0.0 \\
+GoR/DIM ablation & 59.4 & 97.2 & 90.0 & 37.2 & 48.9 & 52.0 \\
+GoR/DIM act-sub & 4.4 & 96.6 & 91.1 & 42.7 & 53.0 & 13.3 \\
+GoR-RDO ablation & 32.4 & 98.6 & 95.0 & 67.3 & 73.9 & 15.3 \\
+Refusal direction ablation & 59.2 & 97.2 & 90.0 & 37.2 & 48.9 & 53.1 \\
+Refusal direction ActAdd & 4.8 & 96.6 & 91.1 & 42.7 & 53.0 & 13.3 \\
+RepIt projection & 2.0 & 98.2 & 93.4 & 55.6 & 65.4 & 0.0 \\
+\addlinespace[2pt]
+\multicolumn{7}{@{}l}{\textbf{Qwen3-4B-Thinking-2507 --- Phi-4 mini}} \\
+No intervention & 8.6 & 100.0 & 100.0 & 100.0 & 100.0 & 15.3 \\
+GoR/DIM ablation & 13.0 & 97.8 & 87.2 & 26.9 & 47.6 & 21.4 \\
+GoR/DIM act-sub & 7.2 & 97.2 & 87.9 & 29.5 & 49.9 & 9.2 \\
+GoR-RDO ablation & 13.4 & 97.2 & 92.2 & 53.1 & 65.5 & 15.3 \\
+Refusal direction ablation & 13.0 & 97.8 & 87.2 & 26.9 & 47.6 & 21.4 \\
+Refusal direction ActAdd & 7.2 & 97.2 & 87.9 & 29.5 & 49.9 & 9.2 \\
+RepIt projection & 9.2 & 97.0 & 89.7 & 38.0 & 55.5 & 25.5 \\
+\addlinespace[2pt]
+\multicolumn{7}{@{}l}{\textbf{Qwen3-4B-Thinking-2507 --- Qwen2.5-7B}} \\
+No intervention & 3.4 & 100.0 & 100.0 & 100.0 & 100.0 & 8.2 \\
+GoR/DIM ablation & 1.4 & 97.8 & 87.2 & 26.9 & 47.6 & 8.2 \\
+GoR/DIM act-sub & 4.4 & 97.2 & 87.9 & 29.5 & 49.9 & 7.1 \\
+GoR-RDO ablation & 1.6 & 97.2 & 92.2 & 53.1 & 65.5 & 5.1 \\
+Refusal direction ablation & 1.4 & 97.8 & 87.2 & 26.9 & 47.6 & 8.2 \\
+Refusal direction ActAdd & 4.4 & 97.2 & 87.9 & 29.5 & 49.9 & 7.1 \\
+RepIt projection & 5.8 & 97.0 & 89.7 & 38.0 & 55.5 & 11.2 \\
+\addlinespace[2pt]
+\multicolumn{7}{@{}l}{\textbf{Qwen2.5-7B-Instruct --- Phi-4 mini}} \\
+No intervention & 7.0 & 100.0 & 100.0 & 100.0 & 100.0 & 8.2 \\
+GoR/DIM ablation & 60.4 & 99.4 & 90.2 & 36.7 & 46.5 & 86.7 \\
+GoR/DIM act-sub & 72.0 & 99.0 & 89.7 & 33.6 & 43.4 & 86.7 \\
+GoR-RDO ablation & 60.4 & 99.2 & 93.3 & 54.9 & 65.6 & 80.6 \\
+Refusal direction ablation & 60.4 & 99.4 & 90.2 & 36.7 & 46.5 & 89.8 \\
+Refusal direction ActAdd & 72.2 & 99.0 & 89.7 & 33.6 & 43.4 & 87.8 \\
+RepIt projection & 7.0 & 99.4 & 90.4 & 37.5 & 49.7 & 14.3 \\
+\addlinespace[2pt]
+\multicolumn{7}{@{}l}{\textbf{Qwen2.5-7B-Instruct --- Qwen2.5-7B}} \\
+No intervention & 1.8 & 100.0 & 100.0 & 100.0 & 100.0 & 2.0 \\
+GoR/DIM ablation & 47.6 & 99.4 & 90.2 & 36.7 & 46.5 & 52.0 \\
+GoR/DIM act-sub & 57.6 & 99.0 & 89.7 & 33.6 & 43.4 & 58.2 \\
+GoR-RDO ablation & 45.8 & 99.2 & 93.3 & 54.9 & 65.6 & 49.0 \\
+Refusal direction ablation & 46.4 & 99.4 & 90.2 & 36.7 & 46.5 & 52.0 \\
+Refusal direction ActAdd & 57.8 & 99.0 & 89.7 & 33.6 & 43.4 & 58.2 \\
+RepIt projection & 1.6 & 99.4 & 90.4 & 37.5 & 49.7 & 2.0 \\
+\addlinespace[2pt]
+\multicolumn{7}{@{}l}{\textbf{Qwen2.5-1.5B-Instruct --- Phi-4 mini}} \\
+No intervention & 1.4 & 100.0 & 100.0 & 100.0 & 100.0 & 8.2 \\
+GoR/DIM ablation & 25.2 & 96.6 & 90.2 & 36.9 & 50.0 & 12.2 \\
+GoR/DIM act-sub & 35.8 & 96.2 & 89.3 & 33.7 & 43.7 & 66.3 \\
+GoR-RDO ablation & 6.2 & 98.2 & 90.9 & 39.4 & 52.0 & 18.4 \\
+Refusal direction ablation & 25.2 & 96.6 & 90.2 & 36.9 & 50.0 & 12.2 \\
+Refusal direction ActAdd & 36.0 & 96.2 & 89.3 & 33.7 & 43.7 & 66.3 \\
+RepIt projection & 9.0 & 95.8 & 88.9 & 30.5 & 41.7 & 23.5 \\
+\addlinespace[2pt]
+\multicolumn{7}{@{}l}{\textbf{Qwen2.5-1.5B-Instruct --- Qwen2.5-7B}} \\
+No intervention & 0.4 & 100.0 & 100.0 & 100.0 & 100.0 & 1.0 \\
+GoR/DIM ablation & 13.8 & 96.6 & 90.2 & 36.9 & 50.0 & 3.1 \\
+GoR/DIM act-sub & 25.2 & 96.2 & 89.3 & 33.7 & 43.7 & 37.8 \\
+GoR-RDO ablation & 2.0 & 98.2 & 90.9 & 39.4 & 52.0 & 5.1 \\
+Refusal direction ablation & 14.4 & 96.6 & 90.2 & 36.9 & 50.0 & 3.1 \\
+Refusal direction ActAdd & 25.6 & 96.2 & 89.3 & 33.7 & 43.7 & 38.8 \\
+RepIt projection & 2.8 & 95.8 & 88.9 & 30.5 & 41.7 & 7.1 \\
+\end{longtable}

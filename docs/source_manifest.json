@@ -1,0 +1,190 @@
+{
+  "description": "Source snapshot used to prepare the NeurIPS 2026 code release. Release edits and portability changes are recorded in Git. This is a release identity, not a claim that all historical experiments used this Git commit.",
+  "files": [
+    {
+      "path": "experiments/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_family": "experimental implementation"
+    },
+    {
+      "path": "experiments/config.py",
+      "source_sha256": "ff46aa6c64c076938f6b3b5a757724bb22bccc023823553993940f6708552b2a",
+      "source_family": "portable review bundle"
+    },
+    {
+      "path": "experiments/dataset.py",
+      "source_sha256": "2c95c058c8fc3dd591a2b4f704ef568fe3a05992ccd1a8d64f7644aab9d92105",
+      "source_family": "experimental implementation"
+    },
+    {
+      "path": "experiments/eval.py",
+      "source_sha256": "45e0a6023de938604ef77525b2c3e93037f4b21ec3e522397367dd5a92bb548b",
+      "source_family": "experimental implementation"
+    },
+    {
+      "path": "experiments/harness.py",
+      "source_sha256": "9820005795cfb40d0f0e87c6bf100f3c3b635f2e1d7f846859b7269e31293e0d",
+      "source_family": "experimental implementation"
+    },
+    {
+      "path": "experiments/moe_checkpoint_reeval.py",
+      "source_sha256": "503163e1c340537a70aa893f230388bd46405b3c807cb71011830eacf80ace95",
+      "source_family": "experimental implementation"
+    },
+    {
+      "path": "experiments/moe_export_completions.py",
+      "source_sha256": "1a4a4fa5ca35049e4080e6e6978e9b877c8aab3a15f39d26e0c246464ee899bf",
+      "source_family": "experimental implementation"
+    },
+    {
+      "path": "experiments/moe_gate_policy_smoke.py",
+      "source_sha256": "62d416ce13aaf82c837a0dd9d37d5bd248e9837c17a9189d43925fef10767355",
+      "source_family": "experimental implementation"
+    },
+    {
+      "path": "experiments/moe_harness.py",
+      "source_sha256": "62499cc208a99aa01472dc9d006d67d546da58a826806da6603885247922f523",
+      "source_family": "experimental implementation"
+    },
+    {
+      "path": "experiments/simple_steering_baselines.py",
+      "source_sha256": "9ed851422601ae70a66a35356b5309148529e77eeba2b524522ce859b6c1d432",
+      "source_family": "experimental implementation"
+    },
+    {
+      "path": "experiments/target_anchor_smoke.py",
+      "source_sha256": "33ab56e97a4aa7f99b0074da2585af96df5aaec0153701bf992654369fb6cdc5",
+      "source_family": "experimental implementation"
+    },
+    {
+      "path": "src/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_family": "experimental implementation"
+    },
+    {
+      "path": "src/losses/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_family": "experimental implementation"
+    },
+    {
+      "path": "src/losses/attention_map_loss.py",
+      "source_sha256": "6f883aa554e2bf041bb1b73dec93b1e2578ea63e4e3747c9f0cb049cf6d0728c",
+      "source_family": "experimental implementation"
+    },
+    {
+      "path": "src/losses/conditional_edit_loss.py",
+      "source_sha256": "004bf330eef56a22517e14df3b8380d43a5097c6313f1f6dad8ed1ac3c26fd59",
+      "source_family": "experimental implementation"
+    },
+    {
+      "path": "src/main.py",
+      "source_sha256": "f8dfc2d987bb15035f1dcfa6778c6ba76d99bd32051d7fef8754979130d48345",
+      "source_family": "experimental implementation"
+    },
+    {
+      "path": "src/optimized/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_family": "experimental implementation"
+    },
+    {
+      "path": "src/optimized/build_language_direction_basis_optimized.py",
+      "source_sha256": "ecad4cce67dfd90273e215824c6a0a0e9572181f03414b5c4016fa0bb36e6bcb",
+      "source_family": "experimental implementation"
+    },
+    {
+      "path": "src/optimized/frozen_reference_cache.py",
+      "source_sha256": "4cec4460c7d6790df695272e7185cc7aaac8cc27ef6804ed1edc8b6f04e954ea",
+      "source_family": "experimental implementation"
+    },
+    {
+      "path": "src/optimized/gemma3_residual_paving_binary_merged_optimized.py",
+      "source_sha256": "317437580ddf0075437b5e528a97af84a8565cafeab70d2271a7b5dfe9451ab2",
+      "source_family": "experimental implementation"
+    },
+    {
+      "path": "src/optimized/optimized_binary_runtime.py",
+      "source_sha256": "5050c02cfa0ec01f35141bfc77faf121d8c33a72849c6fe943b347c864c532f9",
+      "source_family": "experimental implementation"
+    },
+    {
+      "path": "src/optimized/training_runtime_analysis.py",
+      "source_sha256": "23441b2b3a6d25391320f698d537ba35deb82ab0da243c4c1c9b230e756b7b1e",
+      "source_family": "experimental implementation"
+    },
+    {
+      "path": "src/trainer/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_family": "experimental implementation"
+    },
+    {
+      "path": "src/trainer/gemma3_residual_paving_binary_merged.py",
+      "source_sha256": "21e36b3d5b5fe0f3341d6320fe7509e4324c07a7bfb54f2cfe3d74f8b10433cb",
+      "source_family": "experimental implementation"
+    },
+    {
+      "path": "src/trainer/gemma3_residual_paving_binary_refined.py",
+      "source_sha256": "56f2ce20e0fed1ef39c38023430b91bf121457a1fd2ffce8c9efce791375f232",
+      "source_family": "experimental implementation"
+    },
+    {
+      "path": "src/trainer/gemma3_residual_paving_hybrid.py",
+      "source_sha256": "6eded4a79e9554cecf32a88fbaa376b8fd8d0f5a8c914c49c060e85670e9c610",
+      "source_family": "experimental implementation"
+    },
+    {
+      "path": "src/trainer/harmbench_dataset.py",
+      "source_sha256": "c1b4ad98299174a9bbef6a136e085d3841aa56459b88137b7383e2a33e2a447e",
+      "source_family": "experimental implementation"
+    },
+    {
+      "path": "src/trainer/moe_residual_paver.py",
+      "source_sha256": "9cee2d288e7551c8e40200b2b6e5b87a1495a9fcf1cdf30924b46121c16f3234",
+      "source_family": "experimental implementation"
+    },
+    {
+      "path": "tests/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_family": "experimental implementation"
+    },
+    {
+      "path": "tests/test_dataset.py",
+      "source_sha256": "fc26f7d0bd93a09ce2eae69f6cb814c982ab23203e6fd0564deea413f2393b56",
+      "source_family": "experimental implementation"
+    },
+    {
+      "path": "tests/test_eval.py",
+      "source_sha256": "38fb0f35906d89f47090e9dd62d6daee17519f7c23e4990971a0ebf6d66c8771",
+      "source_family": "experimental implementation"
+    },
+    {
+      "path": "tests/test_frozen_reference_cache.py",
+      "source_sha256": "8ec2f108c8fdde1872c1aba64404310e2e86546ddd418ca1e5a403fe2c92de50",
+      "source_family": "experimental implementation"
+    },
+    {
+      "path": "tests/test_moe_checkpoint_reeval.py",
+      "source_sha256": "aeff883b842b1a7da6126e63c8242b31e34b0b29b5d60b8c77b8569690db6e2f",
+      "source_family": "experimental implementation"
+    },
+    {
+      "path": "tests/test_moe_harness.py",
+      "source_sha256": "0eb5a206417aaed854ffb44104dd225bc19c7d4daf3928ab2c58b8f61722d1cb",
+      "source_family": "experimental implementation"
+    },
+    {
+      "path": "tests/test_optimized_runtime.py",
+      "source_sha256": "a528cd19eb1c7b169f0b82c9ecf494b57b835d5fbb850c78501fca60b3816626",
+      "source_family": "experimental implementation"
+    },
+    {
+      "path": "tests/test_target_anchor_smoke.py",
+      "source_sha256": "f2437ecce29c76c76c722faf756bdc8ba6777dca1d3137a231751bef56fe7bd2",
+      "source_family": "experimental implementation"
+    },
+    {
+      "path": "tests/test_training_helpers.py",
+      "source_sha256": "88c868bd8b660ff53320280e1f07cf597a94e27fd371a1f30a096dab68e90f17",
+      "source_family": "experimental implementation"
+    }
+  ]
+}

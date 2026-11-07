@@ -1,0 +1,5 @@
+# Quantized loading / automatic device placement.
+accelerate
+bitsandbytes
+# PCA and logistic-probe steering controls.
+scikit-learn

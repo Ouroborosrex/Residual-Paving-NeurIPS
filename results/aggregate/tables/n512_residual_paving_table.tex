@@ -1,0 +1,22 @@
+\begin{table}[H]
+\centering
+\caption{N512 Residual Paving diagnostic results. These appendix rows are diagnostic extensions, not replacements for the primary held-out result. Edit success is target non-refusal; edit harmful ASR and harmful-keep ASR are lower-is-safer only for harmful buckets; all values are percentages.}
+\label{tab:n512-residual-paving}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lllccrrrrrr}
+\toprule
+Judge & Backbone & Obj. & Gate & Expert & Scale & Edit succ. & Edit harm ASR & Benign keep & Harm ASR & Harm ref. \\
+\midrule
+Phi-4 mini & Qwen2.5-7B-Instruct & 3-obj. & thresh.-soft & router & 0.65 & 69.2 & 65.0 & 99.2 & 8.2 & 82.7 \\
+Qwen2.5-7B & Qwen2.5-7B-Instruct & 3-obj. & thresh.-soft & router & 0.65 & 81.0 & 52.8 & 99.2 & 0.0 & 66.3 \\
+Phi-4 mini & Qwen2.5-7B-Instruct & 2-obj. & thresh.-soft & router & 0.65 & 75.0 & 70.4 & 99.2 & 63.3 & 31.6 \\
+Qwen2.5-7B & Qwen2.5-7B-Instruct & 2-obj. & thresh.-soft & router & 0.65 & 84.8 & 57.4 & 99.2 & 40.8 & 29.6 \\
+Phi-4 mini & Qwen2.5-1.5B-Instruct & 3-obj. & soft & uniform & 0.35 & 90.6 & 90.2 & 97.6 & 18.4 & 80.6 \\
+Qwen2.5-7B & Qwen2.5-1.5B-Instruct & 3-obj. & soft & uniform & 0.35 & 95.8 & 83.0 & 97.6 & 6.1 & 80.6 \\
+Phi-4 mini & Qwen2.5-1.5B-Instruct & 2-obj. & soft & uniform & 0.35 & 92.8 & 91.4 & 97.6 & 69.4 & 28.6 \\
+Qwen2.5-7B & Qwen2.5-1.5B-Instruct & 2-obj. & soft & uniform & 0.35 & 96.8 & 85.0 & 97.6 & 51.0 & 25.5 \\
+\bottomrule
+\end{tabular}}
+\end{table}

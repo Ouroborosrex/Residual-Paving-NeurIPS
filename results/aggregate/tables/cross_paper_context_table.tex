@@ -1,0 +1,32 @@
+\begin{table}[H]
+\centering
+\caption{Cross-paper target success and preservation context for refusal steering with complete metric triples. Each row reports target success, benign or utility retention, and harmful or off-target preservation with no missing cells. Local rows are same-dataset measurements under the shared SALAD/Alpaca/HarmBench judge protocol; WRMD entries include local protocol runs with no steering intervention and source-reported steering rows where all three cells are available. This table is context rather than a leaderboard because settings, judges, and objectives differ across rows.}
+\label{tab:cross-paper-context}
+\scriptsize
+\setlength{\tabcolsep}{2pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{llllrrr}
+\toprule
+Method & Model & Setting & Source & Target success $\uparrow$ & Benign/utility $\uparrow$ & Harmful/off-target $\uparrow$ \\
+\midrule
+Residual Paving & Gemma-3-4B-IT & local thresholded veto, $s=8$ & local & 96.0 & 95.5 & 87.3 \\
+Residual Paving (oracle) & Gemma-3-4B-IT & local oracle, $s=8$ & diagnostic & 99.8 & 100.0 & 100.0 \\
+DIM & Gemma-3-4B-IT & local pairwise strict, scale 1 & local & 10.0 & 93.3 & 93.3 \\
+GoR-RDO & Gemma-3-4B-IT & local pairwise strict, scale 1 & local & 5.0 & 95.0 & 93.3 \\
+Direction Orthogonalization & Gemma-3-4B-IT & local pairwise strict, scale 1 & local & 23.3 & 81.7 & 83.3 \\
+RepIt & Gemma-3-4B-IT & local pairwise strict, scale 1 & local & 6.7 & 83.3 & 93.3 \\
+DIM & Gemma-2-2B-IT & local strict, scale 1 & local & 0.0 & 99.8 & 99.6 \\
+GoR-RDO & Gemma-2-2B-IT & local strict, scale 1 & local & 0.0 & 100.0 & 100.0 \\
+GoR-RDO & Llama-3-8B-Instruct & local strict, scale 1 & local & 1.7 & 96.5 & 94.9 \\
+DIM & Llama-3-8B-Instruct & local simple-steering, scale 1 & local & 93.3 & 26.1 & 3.6 \\
+DIM & Qwen2.5-14B-Instruct & local early-layer diagnostic, scale 1 & local & 0.0 & 99.9 & 99.8 \\
+GoR-RDO & Qwen2.5-14B-Instruct & local early-layer diagnostic, scale 1 & local & 0.0 & 99.9 & 99.9 \\
+RepIt & Phi-4-mini-Instruct & local strict, scale 1 & local & 1.7 & 98.8 & 99.1 \\
+WRMD protocol & Qwen3-4B Inst. & local WRMD eval, no steering & local & 5.9 & 98.0 & 89.0 \\
+WRMD protocol & Gemma-3-4B-IT & local WRMD eval, no steering & local & 8.5 & 97.0 & 90.0 \\
+Refusal Steering WRMD & Qwen3-4B Inst. & source-reported & source & 67.4 & 99.6 & 55.0 \\
+Refusal Steering WRMD & Qwen3-4B Think. & source-reported & source & 65.3 & 100.7 & 78.0 \\
+Refusal Steering WRMD & Qwen3-80B & source-reported & source & 76.2 & 97.1 & 99.0 \\
+\bottomrule
+\end{tabular}}
+\end{table}

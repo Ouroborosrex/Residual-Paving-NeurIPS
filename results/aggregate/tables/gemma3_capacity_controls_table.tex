@@ -1,0 +1,34 @@
+\begin{table}[H]
+\centering
+\caption{Gemma-3 capacity-control diagnostics. Rows are appendix controls over a smaller evaluation slice ($n_E/n_B/n_H$ shown in the source table: $26/26/10$ for simple steering controls and $50/50/49$ for residual-capacity variants). Values are percentages.}
+\label{tab:gemma3-capacity-controls}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{llcrrrrr}
+\toprule
+Judge & Control & Route & Scale & Edit succ. & Benign keep & Harm ASR & Harm ref. \\
+\midrule
+Phi-4 mini & ActAdd safe-ref. & oracle & -- & 0.0 & 100.0 & 20.0 & 80.0 \\
+Phi-4 mini & ActAdd safe-ref. & probe-soft & -- & 0.0 & 100.0 & 20.0 & 80.0 \\
+Phi-4 mini & DIM benign-harm. & oracle & -- & 0.0 & 100.0 & 20.0 & 80.0 \\
+Phi-4 mini & DIM benign-harm. & probe-soft & -- & 0.0 & 100.0 & 20.0 & 80.0 \\
+Phi-4 mini & Low-rank residual & oracle & 1 & 40.0 & 100.0 & 6.1 & 91.8 \\
+Phi-4 mini & Low-rank residual & thresh.-soft & 1 & 40.0 & 100.0 & 6.1 & 91.8 \\
+Phi-4 mini & MLP no trajectory loss & oracle & 1 & 30.0 & 100.0 & 6.1 & 91.8 \\
+Phi-4 mini & MLP no trajectory loss & thresh.-soft & 1 & 32.0 & 100.0 & 6.1 & 91.8 \\
+Phi-4 mini & Single residual map & oracle & 1 & 24.0 & 100.0 & 6.1 & 91.8 \\
+Phi-4 mini & Single residual map & thresh.-soft & 1 & 18.0 & 100.0 & 6.1 & 91.8 \\
+Qwen2.5-7B & ActAdd safe-ref. & oracle & -- & 0.0 & 100.0 & 0.0 & 80.0 \\
+Qwen2.5-7B & ActAdd safe-ref. & probe-soft & -- & 0.0 & 100.0 & 0.0 & 80.0 \\
+Qwen2.5-7B & DIM benign-harm. & oracle & -- & 0.0 & 100.0 & 0.0 & 80.0 \\
+Qwen2.5-7B & DIM benign-harm. & probe-soft & -- & 0.0 & 100.0 & 0.0 & 80.0 \\
+Qwen2.5-7B & Low-rank residual & oracle & 1 & 30.0 & 100.0 & 0.0 & 93.9 \\
+Qwen2.5-7B & Low-rank residual & thresh.-soft & 1 & 28.0 & 100.0 & 0.0 & 93.9 \\
+Qwen2.5-7B & MLP no trajectory loss & oracle & 1 & 34.0 & 100.0 & 0.0 & 93.9 \\
+Qwen2.5-7B & MLP no trajectory loss & thresh.-soft & 1 & 32.0 & 100.0 & 0.0 & 93.9 \\
+Qwen2.5-7B & Single residual map & oracle & 1 & 36.0 & 100.0 & 0.0 & 93.9 \\
+Qwen2.5-7B & Single residual map & thresh.-soft & 1 & 34.0 & 100.0 & 0.0 & 93.9 \\
+\bottomrule
+\end{tabular}}
+\end{table}

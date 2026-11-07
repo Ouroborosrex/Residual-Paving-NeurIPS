@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "device": "cpu",
+  "model": "tiny random Qwen2",
+  "downloaded_pretrained_weights": false,
+  "benchmark_data": false,
+  "stages": [
+    "target/cache construction",
+    "gate pretraining",
+    "contrastive warmup",
+    "forced-edit fitting",
+    "joint fitting",
+    "gate/veto calibration",
+    "checkpoint serialization",
+    "policy evaluation",
+    "checkpoint re-evaluation",
+    "completion export"
+  ],
+  "elapsed_seconds": 9.17,
+  "checkpoint_keys": [
+    "config",
+    "gate_threshold",
+    "gate_threshold_search_acc",
+    "gate_threshold_train_acc",
+    "intervention_layer_indices",
+    "moe_controller_state_dict",
+    "moe_router_state_dict",
+    "router_layer_indices"
+  ],
+  "interpretation": "Software execution check only; no behavioral or safety claim."
+}

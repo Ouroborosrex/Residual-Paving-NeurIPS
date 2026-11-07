@@ -1,0 +1,100 @@
+{
+  "scope": "Separate follow-up checkpoints used in Appendix C.2; not the main Table 3 protocol.",
+  "models": [
+    {
+      "export": "export_gemma2_2b",
+      "model_id": "google/gemma-2-2b-it",
+      "configuration_kind": "Saved export-time configuration; not a verified training recipe.",
+      "settings": {
+        "data_seed": 20260726,
+        "eval_seed": 20260726,
+        "n_edit": 40,
+        "n_keep_benign": 40,
+        "n_keep_harmful": 100,
+        "eval_fraction": 0.9,
+        "eval_max_new_tokens": 128,
+        "moe_intervention_scale": 1.0,
+        "require_edit_base_refusal": false,
+        "edit_prompts_prefiltered_base_refusal": false,
+        "model_quantization": "none"
+      },
+      "scale_calibration_enabled": false
+    },
+    {
+      "export": "export_gemma3_4b",
+      "model_id": "google/gemma-3-4b-it",
+      "configuration_kind": "Saved export-time configuration; not a verified training recipe.",
+      "settings": {
+        "data_seed": 20260726,
+        "eval_seed": 20260726,
+        "n_edit": 40,
+        "n_keep_benign": 40,
+        "n_keep_harmful": 100,
+        "eval_fraction": 0.9,
+        "eval_max_new_tokens": 128,
+        "moe_intervention_scale": 1.0,
+        "require_edit_base_refusal": false,
+        "edit_prompts_prefiltered_base_refusal": false,
+        "model_quantization": "none"
+      },
+      "scale_calibration_enabled": false
+    },
+    {
+      "export": "export_qwen1_5b",
+      "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+      "configuration_kind": "Saved export-time configuration; not a verified training recipe.",
+      "settings": {
+        "data_seed": 20260726,
+        "eval_seed": 20260726,
+        "n_edit": 40,
+        "n_keep_benign": 40,
+        "n_keep_harmful": 100,
+        "eval_fraction": 0.9,
+        "eval_max_new_tokens": 128,
+        "moe_intervention_scale": 1.0,
+        "require_edit_base_refusal": false,
+        "edit_prompts_prefiltered_base_refusal": false,
+        "model_quantization": "none"
+      },
+      "scale_calibration_enabled": false
+    },
+    {
+      "export": "export_qwen7b",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "configuration_kind": "Saved export-time configuration; not a verified training recipe.",
+      "settings": {
+        "data_seed": 20260726,
+        "eval_seed": 20260726,
+        "n_edit": 40,
+        "n_keep_benign": 40,
+        "n_keep_harmful": 100,
+        "eval_fraction": 0.9,
+        "eval_max_new_tokens": 128,
+        "moe_intervention_scale": 1.0,
+        "require_edit_base_refusal": false,
+        "edit_prompts_prefiltered_base_refusal": false,
+        "model_quantization": "none"
+      },
+      "scale_calibration_enabled": false
+    },
+    {
+      "export": "export_qwen14b",
+      "model_id": "Qwen/Qwen2.5-14B-Instruct",
+      "configuration_kind": "Saved export-time configuration; not a verified training recipe.",
+      "settings": {
+        "data_seed": 20260726,
+        "eval_seed": 20260726,
+        "n_edit": 40,
+        "n_keep_benign": 40,
+        "n_keep_harmful": 100,
+        "eval_fraction": 0.9,
+        "eval_max_new_tokens": 128,
+        "moe_intervention_scale": 1.0,
+        "require_edit_base_refusal": false,
+        "edit_prompts_prefiltered_base_refusal": false,
+        "model_quantization": "none"
+      },
+      "scale_calibration_enabled": false
+    }
+  ]
+}

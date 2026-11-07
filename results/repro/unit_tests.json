@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "test_runner": "python -m unittest discover -s tests -q",
+  "tests": 96,
+  "device": "cpu",
+  "python": "3.12.7",
+  "torch": "2.10.0+cu128",
+  "transformers": "5.5.4",
+  "datasets": "4.8.4",
+  "numpy": "2.2.6",
+  "interpretation": "Software tests only; no full-size behavioral replication."
+}

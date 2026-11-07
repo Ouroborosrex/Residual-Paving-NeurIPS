@@ -1,0 +1,19 @@
+\begin{table}[H]
+\centering
+\caption{XSTest same-source control on Gemma-3. This appendix diagnostic addresses the dataset-source separability concern by drawing edit, benign-keep, and harmful-keep examples from the same benchmark family while retaining the route-policy comparison. It is underpowered because only two base-refused safe XSTest prompts qualify for the edit bucket. Values are percentages; prompt counts are $n_E=2$, $n_B=73$, and $n_H=60$.}
+\label{tab:xstest-same-source-control}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lccrrrrr}
+\toprule
+Judge & Route & Scale & Edit benign & Edit non-ref. & Benign keep & Harm ASR & Harm ref. \\
+\midrule
+Phi-4 mini v5 & oracle & 1 & 0.0 & 0.0 & 100.0 & 6.7 & 93.3 \\
+Phi-4 mini v5 & thresh.-soft & 1 & 0.0 & 0.0 & 100.0 & 6.7 & 93.3 \\
+Phi-4 mini v5 & thresh.-soft & 4 & 0.0 & 0.0 & 100.0 & 6.7 & 93.3 \\
+Qwen2.5-7B v5 & oracle & 1 & 0.0 & 100.0 & 100.0 & 6.7 & 85.0 \\
+Qwen2.5-7B v5 & thresh.-soft & 1 & 0.0 & 0.0 & 100.0 & 6.7 & 85.0 \\
+Qwen2.5-7B v5 & thresh.-soft & 4 & 0.0 & 0.0 & 100.0 & 6.7 & 85.0 \\
+\bottomrule
+\end{tabular}
+\end{table}

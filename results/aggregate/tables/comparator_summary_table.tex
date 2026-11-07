@@ -1,0 +1,28 @@
+\begin{table}[H]
+\centering
+\caption{Derived comparator and Residual Paving evidence summary. External-method rows are deduplicated descriptive means over the final three-objective Phi/Qwen judged grid: two local judges $\times$ available backbone rows per method. Residual Paving rows are deduplicated means over the two local judges for the N512 objective checks. This table is derived from the detailed appendix tables, not a separate experiment. Full judge-specific rows are in Tables~\ref{tab:final-external-phi-qwen-v5}, \ref{tab:transferred-three-objective-full}, and \ref{tab:n512-residual-paving}; primary refusal-rate intervals are in Table~\ref{tab:refusal-uncertainty}. Target success is non-refusal on edit prompts; harmful ASR is lower-is-safer; pairwise NW is benign utility non-worse than no intervention.}
+\label{tab:comparator-summary}
+\scriptsize
+\setlength{\tabcolsep}{2pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{llrrrrrr}
+\toprule
+Evidence block & Method / setting & Rows & Target succ. $\uparrow$ & Benign keep $\uparrow$ & Pairwise NW $\uparrow$ & Harm ASR $\downarrow$ & Harm ref. $\uparrow$ \\
+\midrule
+\multicolumn{8}{l}{\textit{External-method comparator context, three-objective grid}} \\
+External methods & No intervention & 18 & 2.2 & 98.4 & 100.0 & 3.5 & -- \\
+External methods & GoR/DIM ablation & 18 & 33.3 & 87.6 & 57.3 & 32.5 & -- \\
+External methods & GoR/DIM act-sub & 18 & 29.0 & 90.0 & 62.5 & 36.6 & -- \\
+External methods & GoR-RDO ablation & 18 & 27.9 & 98.5 & 74.8 & 29.1 & -- \\
+External methods & Refusal direction ablation & 18 & 32.6 & 87.6 & 56.6 & 33.8 & -- \\
+External methods & Refusal direction ActAdd & 18 & 30.6 & 90.1 & 62.2 & 39.7 & -- \\
+External methods & RepIt projection & 18 & 5.3 & 98.5 & 68.9 & 9.8 & -- \\
+\addlinespace[2pt]
+\multicolumn{8}{l}{\textit{Residual Paving N512 objective checks}} \\
+Residual Paving N512 & Qwen2.5-1.5B, 3-obj. & 2 & 93.2 & 97.6 & -- & 12.2 & 80.6 \\
+Residual Paving N512 & Qwen2.5-1.5B, 2-obj. & 2 & 94.8 & 97.6 & -- & 60.2 & 27.1 \\
+Residual Paving N512 & Qwen2.5-7B, 3-obj. & 2 & 75.1 & 99.2 & -- & 4.1 & 74.5 \\
+Residual Paving N512 & Qwen2.5-7B, 2-obj. & 2 & 79.9 & 99.2 & -- & 52.0 & 30.6 \\
+\bottomrule
+\end{tabular}}
+\end{table}

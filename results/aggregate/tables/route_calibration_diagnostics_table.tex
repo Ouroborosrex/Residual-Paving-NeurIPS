@@ -1,0 +1,57 @@
+\begin{table}[H]
+\centering
+\caption{Route calibration, selectivity, and veto diagnostics. Gate values are mean intervention strengths at scale $8$; veto columns report blocked-example percentages.}
+\label{tab:route-calibration-diagnostics}
+\label{tab:selectivity-diagnostics}
+\label{tab:gate-calibration}
+\label{tab:veto-calibration}
+\scriptsize
+\setlength{\tabcolsep}{2pt}
+
+\resizebox{\linewidth}{!}{\begin{tabular}{@{}c@{}}
+\begin{tabular}{lrrrrrrr}
+\toprule
+Split & E-vs-HK probe & Edit gate & Benign gate & Harm gate & Edit veto & Benign veto & Harm veto \\
+\midrule
+Primary & 89.5 & 7.22 & 0.21 & 0.51 & 0.0 & 0.0 & 86.8 \\
+Seed 43/29 & 92.1 & 6.69 & 0.73 & 0.22 & 7.9 & 0.0 & 86.8 \\
+Seed 44/31 & 96.1 & 7.33 & 0.39 & 0.21 & 2.6 & 0.0 & 92.1 \\
+Seed 45/33 & 96.1 & 7.22 & 0.00 & 0.21 & 2.6 & 0.0 & 92.1 \\
+\bottomrule
+\end{tabular}
+\\[3pt]
+
+
+\begin{tabular}{lrrl}
+\toprule
+Main route & Edit gate & Harm gate & Veto rate (E/B/H) \\
+\midrule
+Learned router (no veto) & 7.23 & 0.76 & -- \\
+Learned + thresholded-soft veto & 7.22 & 0.51 & 0.0 / 0.0 / 86.8 \\
+Learned + soft low-threshold veto & 6.37 & 0.44 & 13.2 / 0.0 / 92.1 \\
+Oracle routing & 8.00 & 0.00 & 0.0 / 0.0 / 0.0 \\
+\bottomrule
+\end{tabular}
+\\[3pt]
+
+
+\begin{tabular}{lrrrrrrr}
+\toprule
+View & Brier & ECE & Accuracy & Edit active & Benign false active & Harmful false active & Harm veto rate \\
+\midrule
+Raw router & 0.055 & 0.060 & 93.9 & 94.7 & 2.6 & 10.5 & -- \\
+Thresholded-soft + veto & 0.049 & 0.060 & 94.7 & 94.7 & 2.6 & 7.9 & 86.8 \\
+\bottomrule
+\end{tabular}
+\\[3pt]
+
+\begin{tabular}{lrrrr}
+\toprule
+Variant & Accuracy & Edit veto FP & Benign veto FP & Harmful recall \\
+\midrule
+L2=0.1, low threshold & 93.0 & 13.2 & 0.0 & 92.1 \\
+L2=0.1, high threshold & 95.6 & 0.0 & 0.0 & 86.8 \\
+\bottomrule
+\end{tabular}
+\end{tabular}}
+\end{table}

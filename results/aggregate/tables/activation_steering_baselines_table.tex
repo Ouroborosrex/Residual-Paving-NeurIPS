@@ -1,0 +1,37 @@
+\begin{table}[H]
+\centering
+\caption{Matched-bucket activation-steering comparator diagnostics. The first block reports primary-backbone comparator sweeps under the comparator export protocol, which uses the same edit/benign/harmful bucket semantics and preservation-aware selection rule as the main task but is not the full 500/500/98 OpenAI-judge protocol in Table~\ref{tab:primary-operating}. The second block reports local non-primary backbone adaptations of the same activation-steering comparator family. These rows are comparator diagnostics, not exact reproductions of each external paper pipeline, and base rates should be read within this table rather than substituted for the primary full-split estimates.}
+\label{tab:activation-steering-baselines}
+\label{tab:simple-steering-baselines}
+\label{tab:simple-steering-cross-model}
+\scriptsize
+\setlength{\tabcolsep}{2pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrrrrrrr}
+\toprule
+Method & Scale & Base edit ref. & Edit ref. & Benign pres. & Harmful pres. & Base harm ref. & Harm ref. & Harm $\Delta$ & Benign active & Harmful active \\
+\midrule
+Edit-target ActAdd & 2 & 100.0 & 86.8 & 99.9 & 99.9 & 55.3 & 52.6 & -2.6 & 100.0 & 100.0 \\
+Edit-target ActAdd + veto & 2 & 100.0 & 86.8 & 100.0 & 100.0 & 55.3 & 55.3 & +0.0 & 0.0 & 5.3 \\
+Edit-target oracle ActAdd & 2 & 100.0 & 86.8 & 100.0 & 100.0 & 55.3 & 55.3 & +0.0 & 0.0 & 0.0 \\
+DIM-style refusal direction & 8 & 100.0 & 78.9 & 99.8 & 99.8 & 55.3 & 52.6 & -2.6 & 100.0 & 100.0 \\
+DIM-style refusal direction + veto & 8 & 100.0 & 78.9 & 100.0 & 100.0 & 55.3 & 55.3 & +0.0 & 0.0 & 5.3 \\
+DIM-style oracle refusal direction & 8 & 100.0 & 78.9 & 100.0 & 100.0 & 55.3 & 55.3 & +0.0 & 0.0 & 0.0 \\
+\bottomrule
+\end{tabular}}
+\vspace{3pt}
+
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{llrrrrrr}
+\toprule
+Model & Baseline & Scale & Edit ref. & Benign pres. & Harmful pres. & Harm ref. & Harm $\Delta$ \\
+\midrule
+Qwen2.5-1.5B-Instruct & Probe-gated ActAdd + veto & 4 & 10.5 & 100.0 & 95.9 & 84.2 & -2.6 \\
+Qwen2.5-1.5B-Instruct & Oracle-gated ActAdd & 16 & 0.0 & 100.0 & 100.0 & 86.8 & +0.0 \\
+Gemma-2-2B-IT & Probe-gated ActAdd + veto & 16 & 78.9 & 100.0 & 100.0 & 78.9 & +0.0 \\
+Gemma-2-2B-IT & Oracle-gated ActAdd & 16 & 76.3 & 100.0 & 100.0 & 78.9 & +0.0 \\
+Qwen2.5-7B-Instruct & Probe-gated ActAdd + veto & 8 & 15.8 & 100.0 & 90.4 & 47.4 & -2.6 \\
+Qwen2.5-7B-Instruct & Oracle-gated ActAdd & 16 & 5.3 & 100.0 & 100.0 & 50.0 & +0.0 \\
+\bottomrule
+\end{tabular}}
+\end{table}

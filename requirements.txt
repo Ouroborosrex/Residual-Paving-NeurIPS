@@ -1,0 +1,9 @@
+# Versions used for the release's CPU tests and tiny end-to-end check.
+# Install a torch wheel appropriate for your CUDA driver if running on a GPU.
+torch==2.10.0
+transformers==5.5.4
+datasets==4.8.4
+numpy==2.2.6
+PyYAML==6.0.3
+tqdm==4.67.3
+pillow==12.2.0
